@@ -1,0 +1,5 @@
+# Ignore Ctags generated files
+.tags*
+.gemtags*
+tags
+.starscope.db
