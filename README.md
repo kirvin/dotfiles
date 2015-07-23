@@ -23,4 +23,4 @@
 
 `mkrc -v .zshrc .gitconfig .bashrc`
 
-4. (Optional) Create a git repo using the `~/.dotfiles` directory.
+(Optional) Create a git repo using the `~/.dotfiles` directory.
