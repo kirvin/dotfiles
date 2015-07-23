@@ -4,7 +4,7 @@
 2. Clone this project to `~/.dotfiles`.
 3. Use RCM to create the dot file sym links.
 
-  `rcup -v`
+`rcup -v`
 
 ##### local overrides
 
@@ -12,7 +12,7 @@
 2. Add local overrides to the directory.
 3. Use RCM to create the dot file sym links.
 
-  `rcup -v -d ~/.dotfiles.local`.
+`rcup -v -d ~/.dotfiles.local`.
 
 
 ### Populate a `~/.dotfiles` directory from existing dot files
@@ -21,6 +21,6 @@
 2. Create the `~/.dotfiles` directory.
 3. Use RCM to select which files to copy and symlink.
 
-  `mkrc -v .zshrc .gitconfig .bashrc`
+`mkrc -v .zshrc .gitconfig .bashrc`
 
 4. (Optional) Create a git repo using the `~/.dotfiles` directory.
