@@ -54,6 +54,7 @@ unset GREP_OPTIONS
 # User configuration
 
 export PATH="$HOME/.rbenv/bin:$PATH"
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
 eval "$(rbenv init -)"
 
