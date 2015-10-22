@@ -1,17 +1,13 @@
 PATH=/usr/local/git/bin:$PATH
+export CLICOLOR=1
 
-# Determines current ruby, for prompt
-ruby_version()
-{
-  if which rbenv &> /dev/null; then
-    rbenv version | cut -f1 -d ' '
-  else
-    if which rvm-prompt &> /dev/null; then
-     rvm-prompt i v g
-    fi
-  fi
-}
+# light bg?
+#export LSCOLORS=ExFxCxDxBxegedabagacad
+# dark bg
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
-#function git_prompt_info() {
-#  git branch> /dev/null | sed -e '/^[\^]/d' -e 's/ \(.*\)/ (\1)/'
-#}
+export PATH="$PATH:.:$HOME/.rvm/bin:$HOME/workspaces/scripts/ops-scripts:$HOME/workspaces/scripts/ruby-dev-scripts:$HOME/workspaces/ops/build/build-scripts"
+
+
+export SSH_USER=kelly
+export PATH=/opt/chefdk/bin:$PATH
