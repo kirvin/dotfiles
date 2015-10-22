@@ -11,3 +11,6 @@ export PATH="$PATH:.:$HOME/.rvm/bin:$HOME/workspaces/scripts/ops-scripts:$HOME/w
 
 export SSH_USER=kelly
 export PATH=/opt/chefdk/bin:$PATH
+
+export JAVA_OPTS="-Xmx2048M -Xms128M"
+export JRUBY_OPTS="-J-Xmx2048M"
