@@ -1,3 +1,10 @@
+## TODO
+
+* Atom config
+* Clean up readme
+* Homebrew-based initial dependencies
+
+
 ### Restore a system
 
 1. Install RCM : https://github.com/thoughtbot/rcm.
