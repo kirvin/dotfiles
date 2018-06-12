@@ -1,4 +1,4 @@
-PATH=/usr/local/git/bin:$PATH
+PATH=/usr/local/git/bin:$HOME/go/bin:$PATH
 export CLICOLOR=1
 
 # light bg?

@@ -5,3 +5,4 @@
 . ~/.bash/aliases
 . ~/.bash/rvm
 . ~/.bash/env
+. ~/.bash/nvm
