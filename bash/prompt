@@ -26,3 +26,25 @@ else \
   # @2 - Prompt when not in GIT repo
   echo " '$Yellow$PathShort$Color_Off'\$ "; \
 fi)'
+
+__tf_ps1 () {
+    local workspace=""
+    local print_format=${1:-(%s)}
+
+    if [[ -z ${TF_WORKSPACE+x} ]]; then
+        if [[ -f .terraform/environment ]]; then
+            workspace=`cat .terraform/environment`
+        else
+            workspace=""
+        fi
+    else
+        workspace=${TF_WORKSPACE}
+    fi
+
+    if [[ $workspace != "" ]]; then
+        printf "$print_format" "$workspace"
+    fi
+
+    unset workspace print_format
+    return 0
+}

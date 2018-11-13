@@ -3,6 +3,6 @@
 . ~/.bash/git-prompt
 . ~/.bash/prompt
 . ~/.bash/aliases
-. ~/.bash/rvm
+. ~/.bash/rbenv
 . ~/.bash/env
 . ~/.bash/nvm
