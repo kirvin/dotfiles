@@ -1,3 +1,4 @@
+
 ## TODO
 
 * Atom config
@@ -10,8 +11,8 @@
 1. Install RCM : https://github.com/thoughtbot/rcm.
 2. Clone this project to `~/.dotfiles`.
 3. Use RCM to create the dot file sym links.
-
-`rcup -v`
+4.  Install homebrew
+5.  `./setup/setup.sh`
 
 ##### local overrides
 

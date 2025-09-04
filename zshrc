@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+SHARED=$HOME/.shell-shared
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -10,6 +11,8 @@ ZSH_THEME="chethanreddy"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+source $SHARED/*
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -52,11 +55,10 @@ source $ZSH/oh-my-zsh.sh
 unset GREP_OPTIONS
 
 # User configuration
-
-export PATH="$HOME/.rbenv/bin:$PATH"
+#export PATH="$HOME/.rbenv/bin:$PATH"
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 ZSHRC_LOCAL="$HOME/.zshrc.local"
 [[ -f $ZSHRC_LOCAL ]] && source $ZSHRC_LOCAL
@@ -74,4 +76,7 @@ ZSHRC_LOCAL="$HOME/.zshrc.local"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# Add asdf installations to path
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"

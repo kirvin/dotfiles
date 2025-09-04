@@ -7,3 +7,5 @@
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [ -f /Users/kelly/workspaces/lennd/lennd-scheduled-tasks/node_modules/tabtab/.completions/sls.bash ] && . /Users/kelly/workspaces/lennd/lennd-scheduled-tasks/node_modules/tabtab/.completions/sls.bash
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path bash)"
